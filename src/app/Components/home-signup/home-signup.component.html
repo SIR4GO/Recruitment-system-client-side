@@ -1,0 +1,44 @@
+<main class="signup-options" xmlns="http://www.w3.org/1999/html">
+  <section class="options-cover row">
+       <div class="col-md-6 option-info ">
+         <section class="info">
+             <router-outlet></router-outlet>
+         </section>
+       </div>
+       <div class="col-md-6 option-method ">
+         <section class="square">
+           <label class="actor-label"  >Join  <span style="font-style: italic">Easy Recruitment  </span> as </label>
+           <div class="button-box">
+               <button  (mouseleave)="removeBackground(candidate)" (mousemove)="changeBackground(candidate)" (click)="changeUrl(candidate)" class="author-button" value=".candidate-button" #candidate>Candidate </button>
+               <button (mouseleave)="removeBackground(hr)" (mousemove)="changeBackground(hr)" (click)="changeUrl(hr)" class="follower-button" value=".hr-button" #hr>Hr</button>
+           </div>
+
+
+               <label class="birth-label"  >Full Name </label>
+               <div class="form-group" >
+                 <input  [(ngModel)]="name"  required name="name" type="text" class="form-control" id="exampleName" aria-describedby="NameHelp" placeholder="Enter Name">
+               </div>
+
+               <label class="birth-label"  > Email </label>
+               <div class="form-group" >
+                 <input  [(ngModel)]="email" required name="email" type="text" class="form-control" id="exampleEmail" aria-describedby="NameHelp" placeholder="Enter Email">
+               </div>
+
+               <label class="birth-label"  > Password </label>
+               <div class="form-group" >
+                 <input  [(ngModel)]="password" required name="password" type="password" class="form-control" id="examplePassword" aria-describedby="NameHelp" placeholder="Enter password">
+               </div>
+               <button (click)="signUp('typical')" type="submit" class="signup-btn block-style button-style"> Register </button>
+
+           <br>
+
+           <div style="font-weight: bold ; color: #042D4E; margin: 10px 0 10px 0">Continue with  Social media ? </div>
+           <button (click)="signUp('google')" class="signup-gmail block-style button-style"> <i style="margin-right: 8px" class="fa fa-google" aria-hidden="true" ></i> Sign Up with Google </button>
+           <div style="display: flex ; justify-content: space-between">
+             <div style="margin: 20px 0 0 0;font-style: italic">if has account <a [routerLink]="['/login']" style="color: #00294A ; font-weight: bold ">login</a></div>
+             <div  class="error-message" id="error" style="margin: 20px 0 0 0;color: #DE4639 ; font-style: italic"> </div>
+           </div>
+         </section>
+       </div>
+  </section>
+</main>

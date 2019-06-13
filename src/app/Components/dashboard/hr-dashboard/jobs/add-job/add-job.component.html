@@ -1,0 +1,23 @@
+<p id="Message" > all wrong </p>
+<form (submit)="createJob()" >
+  <div class="form-group"   >
+    <label class="edit-boot-label" for="exampleInputTitle">Job title </label>
+    <input required name="title"  [(ngModel)]= "title" type="text" class="form-control" id="exampleInputTitle" aria-describedby="titleHelp" placeholder="Enter Job title">
+    <small id="titleHelp" class="form-text text-muted">Enter brief title </small>
+  </div>
+  <div class="form-group">
+    <label class="edit-boot-label" for="exampleFormControlTextarea1">Job description </label>
+    <textarea required name="description"  [(ngModel)]= "description" class="form-control textA1" id="exampleFormControlTextarea1" rows="3" placeholder="Enter Job description"></textarea>
+  </div>
+  <div class="form-group">
+    <label class="edit-boot-label" for="exampleFormControlTextarea2">Job requirements </label>
+    <textarea required name="requirement"  [(ngModel)]= "requirement" class="form-control textA2" id="exampleFormControlTextarea2" rows="3" placeholder="Enter Job requirements"></textarea>
+  </div>
+  <div class="form-group">
+    <label class="edit-boot-label" for="exampleInputDate">Posted Date </label>
+    <input required name="date"  [(ngModel)]= "date"  type="date" class="form-control" id="exampleInputDate"  placeholder="Enter Posted date ">
+  </div>
+  <button  type="submit" name="submit" class="edit-boot-btn btn btn-primary">Submit</button>
+</form>
+
+

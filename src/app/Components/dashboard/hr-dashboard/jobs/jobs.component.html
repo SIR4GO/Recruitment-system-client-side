@@ -1,0 +1,16 @@
+<main class="container job-card">
+  <div style="display: flex" class="job-navigator">
+    <div class="navigation-area" >
+      <p> Choose from navigation list.  </p>
+      <ul>
+        <li><a (click)="navigateToAddJobs()" >Add  </a></li>
+        <li><a (click)="navigateToLastJobs()"  >Browse</a></li>
+        <li><a>Applied & Candidates</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="router-area">
+    <router-outlet></router-outlet>
+  </div>
+</main>
+

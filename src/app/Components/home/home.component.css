@@ -1,0 +1,367 @@
+/* ready classes */
+.overlay
+{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top:0 ;
+  right: 0;
+  left: 0 ;
+  background-color: rgba(0,0,0,.5) ;
+}
+.clean
+{
+  clear: both;
+}
+.cont
+{
+  margin: auto;
+  position: relative;
+  width: 1300px
+
+}
+.text_center
+{
+  text-align: center;
+}
+.upper
+{
+  text-transform: uppercase;
+}
+.min_color
+{
+  color: #528B87;
+}
+.min_background
+{
+
+}
+.font
+{
+  font-weight: bold;
+  font-size: 24px;
+}
+
+/* ready classes */
+
+
+body
+{
+  height: 1500px;
+  font-family: sans-serif serif cursive ;
+}
+
+
+
+/* Start Header */
+header
+{
+  background-image: url("./photo/hero_bg_1.jpg");
+  background-size: cover;
+  position: relative;
+}
+header .logo
+{
+  width: 35px;
+  height: 46px;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  margin-top:8px;
+}
+
+
+
+header nav
+{
+  float: right;
+  margin-top: 15px;
+  position: relative;
+}
+
+header .bt
+{
+  display:none;
+  margin-top: 14px;
+
+}
+header .bt .btn-nav
+{
+  width: 40px;
+  background: none;
+  border: none;
+  margin-top: 10px;
+
+}
+header   .bt .btn-nav .btn-line
+{
+  height: 2px;
+  display: block;
+  margin-bottom:6px;
+  background-color: #fff;
+}
+
+header nav ul
+{
+  font-size: 17px;
+
+}
+
+header nav li
+{
+  display: inline-block;
+  color: #FFF;
+  margin-left: 60px;
+
+}
+
+header nav li:first-child  /*Home link */
+{
+  margin-left: 0 ;
+}
+
+header nav li a , header nav li a:hover , header nav li a:focus
+{
+  color: inherit;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header nav li:last-child  /* reservation link */
+{
+  margin-left: 120px ;
+}
+
+header nav li:last-child .icon  /* reservation link */
+{
+  margin-left: 10px ;
+
+}
+
+header .navbar
+{
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+
+}
+
+header .sticky
+{
+  background-color: #fff;
+  box-shadow: 0  3px   5px  black;
+  height: 82px;
+
+}
+
+header .sticky nav li
+{
+  color: black;
+  margin-bottom: 10px;
+
+}
+
+header .sticky .logo
+{
+  margin-bottom: 18px;
+}
+
+header .sticky .logo img
+{
+  position: absolute;
+  top: -100%;
+}
+
+header   .sticky .bt .btn-nav .btn-line
+{
+  background-color: black;
+
+}
+
+header   .sticky .bt .btn-nav
+{
+  margin-top: 16px;
+
+}
+
+
+/* Border */
+header  nav li
+{
+  position: relative;
+
+}
+
+header  nav li:before
+{
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  right: 0;
+  width: 0;
+  transition: width 0.4s;  /* Any change in width make it not 0s but 0.4s */
+  background-color: #fff;
+  height: 3px;
+}
+header  nav li:hover:before  /* During hover on li do width 100% on :before element inside li */
+{
+  width: 100%;
+
+}
+
+
+header .sticky nav li:before
+{
+  background-color: black;
+
+}
+
+
+
+/*Start content */
+
+header .content
+{
+
+  width: 100%;
+  height: 100px;
+  position:absolute ;
+  top: 35%;
+
+}
+
+header .content p
+{
+  font-weight: bold;
+  font-size: 13px;
+  color: #FFFFFF;
+  word-spacing: 10px;
+}
+
+header .content h1
+{
+  color: #FFFFFF;
+  font-size: 52px;
+}
+
+header .content img
+{
+
+  position: absolute;
+  overflow: hidden;
+}
+
+header .content h1 span
+{
+
+}
+
+/* End content */
+/* End Header  */
+
+/* Start body*/
+
+.main-head
+{
+  text-align: center;
+  margin: 100px 0 70px 0 ;
+}
+.job-cards
+{
+  margin-bottom: 100px;
+}
+.job-card
+{
+  height: 250px;
+  background-color: #F9F9FF;
+  padding: 30px 40px;
+  margin-top: 50px;
+  position: relative;
+}
+
+.job-card .head-section
+{
+  display: flex;
+  justify-content: space-between;
+}
+
+.job-card .head-section .title-section h3 #title-link
+{
+  color: black;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+
+.job-card .head-section .title-section .company-name
+{
+  font-style: italic;
+  display:block;
+  margin-bottom: 15px !important;
+}
+
+.job-card .head-section #apply-link
+{
+  border: thin solid gainsboro;
+  color: black;
+  background-color: #FFFFFF;
+  padding: 8px 20px;
+  height: 20%;
+  text-decoration: none;
+  -webkit-transition: background-color 2s;
+  -moz-transition: background-color 2s;
+  -o-transition: background-color 2s;
+  transition: background-color 1s;
+
+}
+.job-card .head-section #apply-link:hover
+{
+  color: #FFFFFF;
+  background-color: #485556;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+.job-card .description-section .description-text
+{
+  color: #989899;
+  height: 80px;
+  overflow: hidden;
+}
+
+.pop-card
+{
+  position: absolute;
+  width: 500px;
+  height: 200px;
+  background-color: gainsboro;
+  padding: 6px 15px 15px 15px;
+  left: 640px;
+}
+
+.pop-card label
+{
+  font-weight: bold;
+  margin-left: 4px  ;
+}
+.pop-card input
+{
+  border-radius: 0;
+}
+
+.pop-card button
+{
+  background-color: #042D4E;
+  border-radius: 0;
+  border: 0;
+}
+
+
+/* end body*/
+
+
+

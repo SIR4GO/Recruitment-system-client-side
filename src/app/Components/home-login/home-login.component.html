@@ -1,0 +1,38 @@
+<main class="signup-options" xmlns="http://www.w3.org/1999/html">
+  <section class="options-cover row">
+    <div class="col-md-6 option-info ">
+      <section class="info">
+        <router-outlet></router-outlet>
+      </section>
+    </div>
+    <div class="col-md-6 option-method ">
+      <section class="square">
+        <label class="actor-label"  >Login  <span style="font-style: italic">Easy Recruitment  </span> as </label>
+        <div class="button-box">
+          <button  (mouseleave)="removeBackground(candidate)" (mousemove)="changeBackground(candidate)" (click)="changeUrl(candidate)" class="author-button" value=".candidate-button" #candidate>Candidate </button>
+          <button (mouseleave)="removeBackground(hr)" (mousemove)="changeBackground(hr)" (click)="changeUrl(hr)" class="follower-button" value=".hr-button" #hr>Hr</button>
+        </div>
+
+
+        <label class="birth-label"  > Email </label>
+        <div class="form-group" >
+          <input  [(ngModel)]="email" required name="email" type="text" class="form-control" id="exampleEmail" aria-describedby="NameHelp" placeholder="Enter Email">
+        </div>
+
+        <label class="birth-label"  > Password </label>
+        <div class="form-group" >
+          <input  [(ngModel)]="password" required name="password" type="password" class="form-control" id="examplePassword" aria-describedby="NameHelp" placeholder="Enter password">
+        </div>
+        <button (click)="login('typical')" type="submit" class="signup-btn block-style button-style"> Login </button>
+
+        <br>
+
+        <div id="social-label" style="font-weight: bold ; color: #042D4E; margin: 10px 0 10px 0"> Continue with  Social media ? </div>
+        <button (click)="login('google')" class="signup-gmail block-style button-style"> <i style="margin-right: 8px" class="fa fa-google" aria-hidden="true" ></i> Sign in with Google </button>
+        <div  class="error-message" id="error" style="margin: 20px 0 0 0;color: #DE4639 ; font-style: italic"> </div>
+        <br>
+        <div style="font-style: italic">if don't has account <a [routerLink]="['/signup/hr']" style="color: #00294A ; font-weight: bold ">register</a></div>
+      </section>
+    </div>
+  </section>
+</main>

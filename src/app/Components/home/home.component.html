@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Recruitment</title>
+  <meta charset="utf-8" />
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+<!-- Start Header -->
+<header>
+  <div class="overlay" ></div>
+  <div class="navbar" >
+    <div class="cont">
+      <div class="logo">
+        <img src="/src/app/Components/home/photo/logo.png" alt="Logo" draggable="false">
+      </div>
+
+      <div class="bt">
+        <button class="btn-nav">
+          <span class="btn-line"></span>
+          <span class="btn-line"></span>
+          <span class="btn-line"></span>
+        </button>
+      </div>
+
+      <nav>
+        <ul class="home-list">
+          <li class="small">  <a [routerLink]="['/']">Home</a>             </li>
+          <li class="small">  <a href="#"> About</a>      </li>
+          <li class="small">  <a href="#">Blog</a>             </li>
+          <li class="small">  <a [routerLink]="['/login']"> Login </a>        </li>
+          <li class="small">
+            <a [routerLink]="['/signup/hr']"> Register </a>
+            <span class="icon  fa fa-angle-right"></span>
+          </li>
+        </ul>
+
+      </nav>
+      <!--<div class="clean"></div>-->
+    </div>
+  </div>
+
+  <div class="clean "></div>
+  <div class="content">
+    <div class="cont">
+
+      <P>W E L C O M E</P>
+      <h1>Easy Requirement <br>
+        <span>Now Availabel</span>
+      </h1>
+
+    </div>
+  </div>
+</header>
+<!-- End Header -->
+
+
+
+<!-- Start Body -->
+
+<h1 class="main-head"> Recent jobs in system   </h1>
+
+<loading-spinner *ngIf="spinnerState"></loading-spinner>
+
+<div class=" job-cards container" *ngIf="DataState">
+  <section id="card1" *ngFor="let job of jobList" class="job-card">
+    <div class="head-section">
+      <div class="title-section">
+        <h3> <a id="title-link" href="#">{{job.title}}</a> </h3>
+        <small class="company-name"> Free House </small>
+      </div>
+      <a id="apply-link"  (click)="applyJob(job.id)"> APPLY </a>
+    </div>
+    <div class="description-section">
+      <p class="description-text">{{job.description}}</p>
+    </div>
+    <div class="date-section">
+      <small class="date-text">{{job.date}}</small>
+    </div>
+  </section>
+
+  <br>
+
+</div>
+
+
+
+<div id="cv-overlay" style="display:none" class="mobile-overlay">
+  <div class="pop-card">
+    <button (click)="closeOberlay()" class="close-btn">x</button>
+    <div class="form-group">
+      <label class="edit-boot-label" for="exampleInputDate">Add link to cv </label>
+      <input required name="cv" [(ngModel)] ="cv" type="url" class="form-control" id="exampleInputDate"  placeholder="Enter link to cv ">
+    </div>
+    <button [disabled]="disableState" (click)="createApplied()" type="submit" name="submit" class="edit-boot-btn btn btn-primary">Submit</button>
+    <p id="err-msg" style="margin:6px 0 0 3px; font-size: 14px ; font-style: italic ; color: #DE4639  " ></p>
+  </div>
+</div>
+
+<!-- End Body -->
+
+
+
+<!-- Start Footer -->
+
+
+
+
+<!-- End Footer -->
+
+
+</body>
+
+
+</html>

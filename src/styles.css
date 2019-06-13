@@ -1,0 +1,87 @@
+body{
+  position: relative;
+  top: 0;
+  right: 0;
+  left: 0;
+  margin: 0;
+  overflow: visible !important;
+}
+.block-style
+{
+  display: block;
+}
+
+.link-style
+{
+  text-decoration: none;
+  color: snow;
+  cursor: pointer;
+}
+.button-style
+{
+  background:none;
+  outline-color: goldenrod;
+  border: none;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 7px;
+  font-weight: bold;
+  color: snow;
+  height: 45px;
+  border-radius: 2px;
+}
+.box-limit
+{
+  display: block;
+  margin: auto !important;
+  width: 1250px;
+
+}
+
+.topic-overlay
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,.9);
+  z-index: 100;
+}
+.common-overlay
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,.09);
+  z-index: 1;
+
+}
+
+.close-btn
+{
+  background: none !important;
+  border: none !important;
+  color: #042D4E !important;
+  margin: 0 0  0 0 !important;
+  font-size: 20px !important;
+}
+
+
+.mobile-overlay
+{
+  position: absolute ;
+  top: 0 ;
+  left: 0 ;
+  right: 0 ;
+  bottom: 0 ;
+  z-index: 100 ;
+  height: 100% ;
+  width: 100%;
+  background-color: rgba(0,0,0,.8);
+  overflow: hidden;
+  display: flex;
+}

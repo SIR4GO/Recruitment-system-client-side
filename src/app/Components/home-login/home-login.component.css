@@ -1,0 +1,102 @@
+
+.edit-background
+{
+  background-color: #042D4E!important;
+  color: white !important;
+}
+
+.edit-temp-background
+{
+  background-color: #042D4E !important;
+  color: white !important;
+}
+.signup-options
+{
+  background: url("../home-signup/photo/hero_bg_1.jpg") no-repeat center;
+  background-size: cover;
+  display: flex;
+}
+
+.options-cover
+{
+  width: 75%;
+  margin: auto;
+  min-height: 700px;
+  opacity: .95989;
+
+}
+
+.option-info
+{
+  width: 50%;
+  background-color: rgb(0 ,41,74);
+
+}
+.option-method
+{
+  width: 50%;
+  background-color: white;
+  display: flex;
+}
+
+
+.option-method .square
+{
+  margin: 0 auto;
+  width: 75%;
+}
+.option-method .square .actor-label
+{
+  margin: 80px auto 7px auto;
+  width: 100%;
+  font-weight: bold;
+  color: #00294A;
+  display: block;
+}
+
+
+.option-method .square .button-box
+{
+  margin:auto;
+  width: 100%;
+  border: thin solid gainsboro ;
+
+
+}
+
+
+.option-method .square .button-box .author-button , .follower-button
+{
+  width: 50%;
+  background: none;
+  color: #042D4E;
+  border: none;
+  font-weight: bold;
+  padding: 0;
+  height: 35px;
+  outline: none;
+  cursor: pointer;
+}
+
+.option-method .square .birth-label
+{
+  margin:20px auto 7px auto;
+  width: 100%;
+  font-weight: bold;
+  color: #00294A;
+  display: block;
+}
+
+
+.option-method .square .signup-btn
+{
+  width: 100%;
+  background-color: #042D4E ;
+  margin-top: 30px;
+
+}
+.option-method .square .signup-gmail
+{
+  width: 100%;
+  background-color: #DE4639;
+}

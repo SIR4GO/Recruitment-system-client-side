@@ -1,0 +1,115 @@
+
+.profile
+{
+  position: relative;
+  height: 200px;
+  background: url("./photos/bg-blue.jpg") no-repeat center;
+  background-size: cover;
+  display: flex;
+  border: 1px #00294A solid;
+  border-radius: 1px;
+}
+
+.profile .profile-info , .profile-tool
+{
+  height: 150px;
+}
+
+.profile .profile-tool
+{
+
+}
+
+.profile .profile-tool
+{
+  direction: rtl;
+  text-align: right;
+  color: white;
+
+}
+.profile .profile-tool button
+{
+  margin: 30px 15px 0 0 ;
+  display: block;
+  background: none;
+  color: white;
+  width: 130px;
+  border: 1px solid silver;
+  border-radius: 4px;
+  padding: 6px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.profile .profile-tool button:last-child
+{
+  margin-top: 15px;
+}
+
+
+
+
+.profile .profile-info
+{
+  display:flex;
+}
+
+.profile .profile-info .info-box
+{
+  margin-left: 20px;
+  padding: 5px;
+
+}
+
+.profile .profile-info .info-box h5
+{
+  margin-top: 15px;
+  margin-bottom: 12px;
+  color: white;
+
+}
+
+.profile .profile-info .info-box p
+{
+   margin:3px;
+  color: silver;
+  font-size: 15.5px;
+}
+
+.profile .profile-info .info-box .achievements
+{
+  display: flex;
+  margin-top: 15px;
+}
+.profile .profile-info .info-box .achievements img
+{
+  width: 27px;
+  height: 27px;
+}
+.profile .profile-info .info-box .achievements .rank-image
+{
+  border-radius: 2px;
+  height: 24px;
+  width: 24px;
+  margin: auto 0 auto 15px;
+}
+.profile .profile-info .info-box .achievements .rank-count
+{
+  background-color: #FAC92E;
+}
+.profile .profile-info .info-box .achievements span
+{
+
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  background-color: #009BDB;
+  width: 40px;
+  text-align: center;
+  height: 18px;
+  margin: auto 0 auto 11px;
+  border-radius: 2px;
+
+}
+
+
+
